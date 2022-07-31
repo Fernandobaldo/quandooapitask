@@ -78,8 +78,8 @@ Example of usage:
 
 `step_definition.js`
 
-    const CreateUserBean = require('../../../support/dto/LoginUserBean');
-    const { createUserOb, createMessage, getAllUser } = require('../../../support/page_object/get-users-page');
+    const LoginUserBean = require('../../../support/dto/LoginUserBean');
+    const { getSingleUser, registerUser, loginUser } = require('../../../support/page_object/get-users-page');
     
     When('GET single user Id', async function (table) {
     (...)
